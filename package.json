@@ -1,0 +1,29 @@
+{
+  "name": "Shopping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build":"cd React && npm run build",
+	"install-React":"cd React && npm install",
+    "heroku-postbuild": "npm run install-React && npm run build",
+	"start": "node index.js",
+	"React":"cd React && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.9",
+    "nodemailer": "^6.4.17",
+    "randomatic": "^3.1.1",
+    "uuid-int": "^3.0.3",
+    "uuidv4": "^6.2.6"
+  },
+  "engines": {
+    "node": "14.7.0"
+  }
+}
